@@ -1,0 +1,40 @@
+.outerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures full viewport height */
+  background-color: #1A1A1D;
+  padding: 10px; /* Prevents content from touching screen edges */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border-radius: 8px;
+  height: 60%;
+  width: 35%;
+  max-width: 500px; /* Prevents it from being too wide */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+  .outerContainer {
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .container {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+/* Tablets & Small Laptops */
+@media (min-width: 480px) and (max-width: 1200px) {
+  .container {
+    width: 50%;
+  }
+}
